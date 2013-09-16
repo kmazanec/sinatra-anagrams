@@ -1,9 +1,15 @@
 <div class="container">
   <h1>Anagrammer</h1>
-
   <form action="/" method="post">
     Your word:
     <input type="text" name="user_input">
     <input type="submit" value="Anagram it!">
   </form>
+
+</div>
+
+<div class="results">
+  <% if @words %>
+    <p><%= @words %></p>
+  <% end %>
 </div>
