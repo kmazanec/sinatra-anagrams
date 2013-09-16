@@ -3,6 +3,7 @@ get '/' do
   erb :index
 end
 
-get '/:word' do
-  "Show a list of anagrams for word \"#{params[:word]}\""
+post '/' do
+  "Show a list of anagrams for word \"#{params[:user_input]}\""
+  redirect to("/#{params[:user_input]}")
 end
