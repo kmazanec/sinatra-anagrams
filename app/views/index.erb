@@ -10,6 +10,8 @@
 
 <div class="results">
   <% if @words %>
-    <p><%= @words %></p>
+    <% @words.each do |word| %>
+      <p><%= word %></p>
+    <% end %>
   <% end %>
 </div>
