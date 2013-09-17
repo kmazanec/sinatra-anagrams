@@ -1,14 +1,39 @@
 .container {
   margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
+  width: 50%;
+  padding: 20px;
   border: 1px dotted black;
+}
+
+h1 {
+  text-align: center;
+  font: message-box;
+  font-size: 40pt;
+}
+
+.container form {
+  text-align: center;
+}
+
+.entry_field {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  font: message-box;
+  font-size: 30pt;
+  text-align: center;
+}
+
+.entry_button {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;  
 }
 
 .results {
   margin: 20px auto;
   text-align: center;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
+  width: 120px;
+  padding: 20px;
   border: 1px dotted black;
 }

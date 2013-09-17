@@ -9,7 +9,7 @@ post '/' do
 end
 
 get '/:word' do
-
+  @prev_word = params[:word]
   @words = Word.anagrams(params[:word])
   # puts @words + " @words"
   # puts params[:word] + " params[:word]"

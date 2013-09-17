@@ -1,17 +1,19 @@
+<% if @prev_word %>
+  <h1><%= @prev_word %></h1>
+<% end %>
+
 <div class="container">
-  <h1>Anagrammer</h1>
   <form action="/" method="post">
-    Your word:
-    <input type="text" name="user_input">
-    <input type="submit" value="Anagram it!">
+    <input class="entry_field" id="user_entry_field" type="text" name="user_input" value="anagram goes here" onFocus="changeEntryFieldText('user_entry_field','');" onBlur="changeEntryFieldText('user_entry_field','anagram goes here');">
+    <!-- <input class="entry_button" type="submit" value="Anagram it!"> -->
   </form>
 
 </div>
 
-<div class="results">
-  <% if @words %>
+<% if @words && @words.any? %>
+  <div class="results">
     <% @words.each do |word| %>
       <p><%= word %></p>
     <% end %>
-  <% end %>
-</div>
+  </div>
+<% end %>
